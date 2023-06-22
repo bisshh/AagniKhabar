@@ -1,6 +1,6 @@
 <div class="title d-flex align-items-center justify-content-between">
 	<h4>विचार/लेख</h4>
-	<a href="/category/province">सबै <i class="fas fa-chevron-circle-right"></i></a>
+	<a href="/category/province">थप <i class="fas fa-chevron-circle-right"></i></a>
 </div>
 <div class="rd-wrap layout-1">
 	<div class="row">

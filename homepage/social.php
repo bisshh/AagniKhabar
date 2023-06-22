@@ -1,6 +1,6 @@
 <div class="title bg-title d-flex align-items-center justify-content-between">
     <h4>सामाजिक सञ्जाल</h4>
-    <a href="/category/social-network">सबै <i class="fas fa-chevron-circle-right"></i></a>
+    <a href="/category/social-network">थप <i class="fas fa-chevron-circle-right"></i></a>
 </div>
 <div class="rd-wrap layout-2">
     <?php $i=0; $args = array('showposts' =>5, 'cat' => '1155');$loop = new WP_Query( $args );if ( $loop->have_posts() ) : while($loop->have_posts()): $loop->the_post();?>

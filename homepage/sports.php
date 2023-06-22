@@ -1,6 +1,6 @@
 <div class="title d-flex align-items-center justify-content-between">
     <h4>विदेश</h4>
-    <a href="/category/international">सबै <i class="fas fa-chevron-circle-right"></i></a>
+    <a href="/category/international">थप <i class="fas fa-chevron-circle-right"></i></a>
 </div>
 <div class="rd-wrap layout-4">
     <?php $i=0; $args = array('showposts' =>2, 'cat' => '150');$loop = new WP_Query( $args );if ( $loop->have_posts() ) : while($loop->have_posts()): $loop->the_post();?>

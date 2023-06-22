@@ -9,10 +9,6 @@
                 ));$loop = new WP_Query( $args );if ( $loop->have_posts() ) : while($loop->have_posts()): $loop->the_post();
             ?>
 			<div class="b-wrap">
-                <?php if( get_field('custom_category') ): ?>
-                    <p class="cust-cat"><?php the_field('custom_category'); ?></p>
-                    <?php else : ?>			
-                <?php endif; ?>
 				<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
                 <?php if( get_field('sub_heading') ): ?>
                     <h3 class="my-2"><?php the_field('sub_heading'); ?></h3>

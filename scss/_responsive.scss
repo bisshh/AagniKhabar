@@ -83,10 +83,7 @@
 		ul {display: flex;
 			li {position:relative;
 				&:first-child {background: $theme-color;
-					a {color: $white;}
-				}
-				&:last-child {float: right; justify-content: end; background: $alt-color;
-					a {color: $white;}
+					a {color: $white !important;}
 				}
 				a {display:block; padding:$pad - 3 $pad - 5;}
 				ul {display: none;}

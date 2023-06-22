@@ -33,7 +33,6 @@ class CustomMenu
         $url=home_url( "/?s" );
         if ($args->theme_location == 'menu-1') {
             $items= "<li><a data-bs-toggle='offcanvas' data-bs-target='#offcanvasWithBackdrop' role='button' aria-controls='offcanvasWithBackdrop'><i class='fas fa-bars'></i></a></li> <li><a href='/'><i class='fas fa-home'></i></a></li>".$items;
-            $items .= "<li><a href='javascript:void(0)' data-bs-toggle='modal' data-bs-target='#exampleModal'><i class='fas fa-search'></i></a></li>";
         }
         return $items;
     }

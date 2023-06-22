@@ -81,8 +81,8 @@
 
 <header class="hide-mb">
 	<div class="container">
-		<div class="row d-flex align-items-center justify-content-between">
-			<div class="col-md-3 logo">
+		<div class="row d-flex align-items-center justify-content-center">
+			<div class="col-md-3 text-center logo">
 				<?php
 				the_custom_logo();
 				if ( is_front_page() && is_home() ) :
@@ -94,20 +94,15 @@
 					
 					<?php
 				endif;?>
-			</div>			
+				<p class="date">
+					<span class="time_date"><?php echo getNepaliDate()->techieConvertNepaliDate(date('j F Y, l'),'j F Y, l'); ?></span>
+				</p>
+			</div>	
+			<?php if ( is_active_sidebar( 'beside-logo' ) ) : ?>		
 			<div class="col-md-7">
-				<?php if ( is_active_sidebar( 'beside-logo' ) ) : ?>
-					<div class="widgets" data-adName="beside-logo"></div>
-				<?php endif?>
+				<div class="widgets" data-adName="beside-logo"></div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<ul class="date">
-					<li><i class="fas fa-calendar-alt"></i> <span class="time_date"><?php echo getNepaliDate()->techieConvertNepaliDate(date('j F Y, l'),'j F Y, l'); ?></span></li>
-					<li><i class="fas fa-clock"></i> <span class="clock"></span></li>
-				</ul>
-			</div>
+			<?php endif?>
 		</div>
 	</div>
 </header>
@@ -134,7 +129,6 @@
 			<div class="col-auto col-sm-5">
 				<ul class="d-flex justify-content-end">
 					<li><a href="#"><span class="rd-icon"><i class="fas fa-chart-line"></i></span></a></li>
-					<li><a data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="rd-icon"><i class="fas fa-search"></i></span></a></li>
 				</ul>
 			</div>			
 		</div>
@@ -173,23 +167,6 @@
 		</div>
 	</div>
 </nav> <!-- /nav desktop-->
-
-<?php $tags=get_trending_posts(); ?>
-<div class="container">
-	<div class="row">
-		<div class="col-12">
-			<div class="rd-trending rounded my-2">
-				<?php $wpdb->show_errors(); ?>
-				<ul>
-					<li><strong><i class="fas fa-chart-line"></i> TRENDING</strong></li>
-					<?php if(!empty($tags)): foreach($tags as $tag):?>
-                        <li><a href="<?php echo get_tag_link($tag->term_id); ?>" rel="tag">#<?php echo $tag->name ?></a></li>
-                    <?php endforeach; endif; ?>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div> <!-- /Trending -->
 
 <?php if ( is_active_sidebar( 'after-menu' ) ) : ?>	
 <div class="container">

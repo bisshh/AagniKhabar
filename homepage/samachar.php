@@ -1,10 +1,10 @@
 <div class="title d-flex align-items-center justify-content-between">
     <h4>प्रमुख समाचार</h4>
-    <a href="/category/prime-news">सबै <i class="fas fa-chevron-circle-right"></i></a>
+    <a href="/category/prime-news">थप <i class="fas fa-chevron-circle-right"></i></a>
 </div>
 <div class="rd-wrap layout-2">
     <div class="row">
-        <?php $i=0; $args = array('showposts' =>5, 'cat' => '160');
+        <?php $i=0; $args = array('showposts' =>5, 'cat' => '1');
                     $loop = new WP_Query( $args );
                         if ( $loop->have_posts() ) : 
                             while($loop->have_posts()): 

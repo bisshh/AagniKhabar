@@ -1,10 +1,10 @@
 <div class="title d-flex align-items-center justify-content-between">
     <h4>राजनीति</h4>
-    <a href="/category/politics">सबै <i class="fas fa-chevron-circle-right"></i></a>
+    <a href="/category/politics">थप <i class="fas fa-chevron-circle-right"></i></a>
 </div>
 <div class="rd-wrap layout-2">
     <div class="row">
-        <?php $i=0; $args = array('showposts' =>5, 'cat' => '144'); $loop = new WP_Query( $args ); while($loop->have_posts()): $loop->the_post();if($i++<1){?>
+        <?php $i=0; $args = array('showposts' =>5, 'cat' => '1'); $loop = new WP_Query( $args ); while($loop->have_posts()): $loop->the_post();if($i++<1){?>
         <div class="col-md-6">
             <a href="<?php the_permalink();?>"><img src="<?php echo get_the_post_thumbnail_url( $post->ID,'rd-m-thumb' ); ?>" class="img-fluid border rounded" alt=""></a>
             <a href="<?php the_permalink();?>"><h2 class="t-line mb-2"><?php echo get_the_title(); ?></h2></a>

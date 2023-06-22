@@ -41,14 +41,6 @@
                                 <?php else : ?>
                                     <span itemprop="author"><?php the_author_posts_link(); ?></span>
                                 <?php endif; ?>
-
-								<span class="author-info">
-									<?php if( get_field('author_info') ): ?>
-                                        <?php the_field('author_info'); ?>
-                                    <?php else: ?>
-                                        <?php echo my_custom_excerpt( get_the_author_meta('description') ); ?>
-                                    <?php endif; ?>
-								</span>
                             </span>
 
                             <span class="rddate" itemprop="datePublished"><i class="fal fa-clock"></i> <?php echo get_the_date("Y F d"); ?> </span>

@@ -1,6 +1,6 @@
 <div class="title d-flex align-items-center justify-content-between">
     <h4>संघर्षको कथा</h4>
-    <a href="/category/lifestyle">सबै <i class="fas fa-chevron-circle-right"></i></a>
+    <a href="/category/lifestyle">थप <i class="fas fa-chevron-circle-right"></i></a>
 </div>
 <div class="rd-wrap layout-1">
     <?php $i=0; $args = array('showposts' =>4, 'cat' => '162');

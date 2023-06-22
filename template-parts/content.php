@@ -9,7 +9,7 @@
 
 ?>
 
-<article class="row" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="row g-4" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php get_template_part('template-parts/single-heading');?>
 	<div class="col-md-9 news-detail border-right">		
 		<?php if (has_post_thumbnail( $post->ID ) ): ?>

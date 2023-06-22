@@ -1,6 +1,6 @@
 <div class="title d-flex align-items-center justify-content-between">
     <h4>भिडियो रिपोर्ट</h4>
-    <a href="/category/video">सबै <i class="fas fa-chevron-circle-right"></i></a>
+    <a href="/category/video">थप <i class="fas fa-chevron-circle-right"></i></a>
 </div>
 <div class="rd-wrap layout-1">
     <?php $i=0; $args = array('showposts' =>4, 'cat' => '1957');
