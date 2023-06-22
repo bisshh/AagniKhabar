@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;600;800&display=swap');
+
+$mukta: 'Mukta', sans-serif;
+
+.font-family {
+	font-family: $mukta;
+	font-weight:400;
+}
+
+// Font Size
+$fnt-sz: 18px;
+
+// Normal Padding
+$nor-pad: 15px 0;
+
+// Normal line-height
+$nor-line:20px;
+
+// Theme Body Color
+$rd-color: #2d3436;
+
+// Corporate Color
+$theme-color:#fc0001;
+$alt-color:#0c7cad;	// alternative color
+
+// Theme Color
+$white: #fff;
+$grey: #95a5a6;
+$black: #000;
+$dark-green: #1abc9c;
+$green:#2ecc71;
+$blue:#3498db;
+$red: #e74c3c;
+$orange: #e67e22;
+$purple: #9b59b6;
+$yellow: #f1c40f;
+
+// Social Color
+$fb-color: #43609c;
+$ms-color: #0084FF;
+$tw-color: #55acee;
+$li-color: #0274b3;
+$gp-color: #dd4b39;
+$yt-color: #cc181e;
+$pi-color: #bd081c;
+$it-color: #E1306C;
+$wp-color: #4fef6c;
+$fm-color: #0093ff;
+$vb-color: #8762fe;
+$ta-color: #34e0a1;
+$wa-color: #25D366;
+
+// Text alignment
+$txt-rgt: right;
+$txt-lft: left;
+$txt-cnt: center;
+
+// Margin 15px
+$margin: 15px;
+.mar-top {margin-top:$margin;}
+
+// Padding 15px
+$pad: 15px;
+
+// Transition effect
+$tran-1: all 0.1s ease-in-out;
+$tran-3: all 0.3s ease-in-out;
+
+.s-line {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.d-line {display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;  overflow: hidden;}
+.t-line {display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;  overflow: hidden;}
+.f-line {display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;  overflow: hidden;}
+.fi-line {display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical;  overflow: hidden;}
+.si-line {display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical;  overflow: hidden;}
+
+@mixin transition($transition) { //0.1s
+	transition:all $transition ease-in-out; 
+	-moz-transition: all $transition ease-in-out;
+	-o-transition: all $transition ease-in-out;
+	-webkit-transition: all $transition ease-in-out;
+}
+
+@mixin alpha-background-color($color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  background-color: $solid-color;
+  background-color: $color;
+}
+
+//@include alpha-background-color(rgba(black, 0.5), white);
+
+@mixin box-shadow($shadow) {
+	-webkit-box-shadow: $shadow;
+	box-shadow: $shadow; //0 0 12px 2px rgba(0,0,0,0.7)
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+ul {list-style:none;}
+a {color:$rd-color; text-decoration: none;
+	&:hover {color:$theme-color !important; text-decoration:none; outline:none;}
+}
+p {line-height:$nor-line;}
+
+// Transition Apply
+a, a:hover {@include transition(0.3s);}
+img, img:hover {@include transition(0.1s);}
+
+// Body
+body {@extend .font-family; background:$white; color:darken($rd-color, 10%); line-height:$nor-line;}
+body, html {height:100%;}
+
+// Body Selection
+::-moz-selection {color: $white; background: lighten($theme-color, 10%);} //Code for Firefox
+::selection {color: $white; background: lighten($theme-color, 10%);}
+
+
+@media (max-width: 767px) {
+	header img {width:80%; margin: 0 auto;}
+	h1 {font-size:28px;}
+	.tbc-form p {font-size: 13px;}
+}
+
+// Custom Scroll
+::-webkit-scrollbar {
+    width: 5px;
+	height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: darken($white, 15%); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $theme-color; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: darken($white, 25%); 
+}
