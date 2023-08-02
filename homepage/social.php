@@ -1,9 +1,9 @@
 <div class="title bg-title d-flex align-items-center justify-content-between">
-    <h4>सामाजिक सञ्जाल</h4>
-    <a href="/category/social-network">थप <i class="fas fa-chevron-circle-right"></i></a>
+    <h4>खेल</h4>
+    <a href="/category/sports">थप <i class="fas fa-chevron-circle-right"></i></a>
 </div>
 <div class="rd-wrap layout-2">
-    <?php $i=0; $args = array('showposts' =>5, 'cat' => '1155');$loop = new WP_Query( $args );if ( $loop->have_posts() ) : while($loop->have_posts()): $loop->the_post();?>
+    <?php $i=0; $args = array('showposts' =>5, 'cat' => '7');$loop = new WP_Query( $args );if ( $loop->have_posts() ) : while($loop->have_posts()): $loop->the_post();?>
     <div class="row rd-border g-3 d-flex align-items-center">
         <div class="col-9">
             <a href="<?php the_permalink();?>"><h3 class="d-line mb-2"><?php the_title();?></h3></a>
