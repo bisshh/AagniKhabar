@@ -33,7 +33,7 @@ get_header();
 		<div class="row">
 			<div class="col-12">
 				<div class="rd-ads">
-					<div class="widgets" data-adName="after-breaking"></div>
+					<?php dynamic_sidebar('after-breaking');?>
 				</div>				
 			</div>
 		</div>
