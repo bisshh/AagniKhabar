@@ -1,6 +1,6 @@
 <div class="title d-flex align-items-center justify-content-between">
-    <h4>प्रमुख समाचार</h4>
-    <a href="/category/prime-news">थप <i class="fas fa-chevron-circle-right"></i></a>
+    <h4>समाचार</h4>
+    <a href="/category/news">थप <i class="fas fa-chevron-circle-right"></i></a>
 </div>
 <div class="rd-wrap layout-2">
     <div class="row">

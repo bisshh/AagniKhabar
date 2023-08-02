@@ -166,6 +166,8 @@ nav {font-size:$fnt-sz + 2; font-weight: 600; border-bottom:2px solid $theme-col
 	}
 }
 
+.tag-li {border: 1px solid $theme-color; padding: 0 $pad - 5; margin-right: 2px; border-radius: $radius;}
+
 .rd-flash {
 	.tag {background: $red; color: $white; text-transform: uppercase;}
 }
