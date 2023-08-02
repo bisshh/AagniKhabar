@@ -49,7 +49,7 @@ get_header();
 				<a href="#"><img src="img/ads/ncell.gif" class="img-fluid border rounded w-100" alt=""></a>
 			</div>
 
-			<?php get_template_part('homepage/janagunaso'); ?>
+			<?php get_template_part('homepage/politics'); ?>
 			
 			<div class="rd-ads">
 				<a href="#"><img src="img/ads/ncell.gif" class="img-fluid border rounded w-100" alt=""></a>
