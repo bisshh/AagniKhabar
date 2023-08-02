@@ -1,9 +1,9 @@
 <div class="title d-flex align-items-center justify-content-between">
-    <h4>देश/दुनियाँ</h4>
-    <a href="/category/country">थप <i class="fas fa-chevron-circle-right"></i></a>
+    <h4>जीवनशैली</h4>
+    <a href="/category/lifestyle">थप <i class="fas fa-chevron-circle-right"></i></a>
 </div>
 <div class="rd-wrap layout-1">
-    <?php $i=0; $args = array('showposts' =>4, 'cat' => '147');
+    <?php $i=0; $args = array('showposts' =>4, 'cat' => '9');
                     $loop = new WP_Query( $args );
                         if ( $loop->have_posts() ) : 
                             while($loop->have_posts()): 

@@ -1,9 +1,9 @@
 <div class="title d-flex align-items-center justify-content-between">
-    <h4>भिडियो रिपोर्ट</h4>
-    <a href="/category/video">थप <i class="fas fa-chevron-circle-right"></i></a>
+    <h4>शिक्षा</h4>
+    <a href="/category/education">थप <i class="fas fa-chevron-circle-right"></i></a>
 </div>
 <div class="rd-wrap layout-1">
-    <?php $i=0; $args = array('showposts' =>4, 'cat' => '1957');
+    <?php $i=0; $args = array('showposts' =>4, 'cat' => '19');
                     $loop = new WP_Query( $args );
                         if ( $loop->have_posts() ) : 
                             while($loop->have_posts()): 

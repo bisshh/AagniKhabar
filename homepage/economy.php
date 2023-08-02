@@ -3,7 +3,7 @@
     <a href="/category/economy">थप <i class="fas fa-chevron-circle-right"></i></a>
 </div>
 <div class="rd-wrap layout-1">
-    <?php $i=0; $args = array('showposts' =>4, 'cat' => '151');
+    <?php $i=0; $args = array('showposts' =>4, 'cat' => '6');
                     $loop = new WP_Query( $args );
                         if ( $loop->have_posts() ) : 
                             while($loop->have_posts()): 

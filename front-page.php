@@ -88,10 +88,10 @@ get_header();
 			</div>
 		</div>
 		<div class="col-md-4">
-			<?php get_template_part('homepage/desh'); ?>
+			<?php get_template_part('homepage/economy'); ?>
 		</div>
 		<div class="col-md-4">
-			<?php get_template_part('homepage/economy'); ?>
+			<?php get_template_part('homepage/desh'); ?>
 		</div>
 		<div class="col-md-4">
 			<?php get_template_part('homepage/video'); ?>
