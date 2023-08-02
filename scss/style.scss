@@ -303,10 +303,10 @@ nav {font-size:$fnt-sz + 2; font-weight: 600; border-bottom:2px solid $theme-col
 		.rddate {padding-left:$pad - 5; font-size:$fnt-sz; color:darken($white, 60%);}
 	}	
 	.news-detail {
-		h1 {font-size:$fnt-sz * 4; font-weight:600;}
-		h2 {font-size:$fnt-sz * 3; font-weight:600; margin: $margin 0;}
-		h3 {font-size:$fnt-sz * 2; font-weight:600; margin: $margin 0;}
-		h4 {font-size:$fnt-sz * 2 - 4; font-weight:600; margin: $margin 0;}
+		h1 {font-size:$fnt-sz * 3; font-weight:600;}
+		h2 {font-size:$fnt-sz * 2; font-weight:600; margin: $margin 0;}
+		h3 {font-size:$fnt-sz * 2 - 4; font-weight:600; margin: $margin 0;}
+		h4 {font-size:$fnt-sz * 2 - 6; font-weight:600; margin: $margin 0;}
 		h1, h2, h3, h4, h5, ul li, ol li {
 			a {color:$theme-color;}
 		}
