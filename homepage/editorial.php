@@ -3,7 +3,7 @@
     <a href="/category/editorial">थप <i class="fas fa-chevron-circle-right"></i></a>
 </div>
 <div class="rd-wrap layout-3">
-<?php $i=0; $args = array('showposts' =>2, 'cat' => '1');$loop = new WP_Query( $args );if ( $loop->have_posts() ) : while($loop->have_posts()): $loop->the_post();?>
+<?php $i=0; $args = array('showposts' =>2, 'cat' => '21');$loop = new WP_Query( $args );if ( $loop->have_posts() ) : while($loop->have_posts()): $loop->the_post();?>
     <div class="row rd-border d-flex align-items-center">
         <div class="col-4">
             <div class="img-area">

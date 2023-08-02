@@ -1,10 +1,10 @@
 <div class="title d-flex align-items-center justify-content-between">
-	<h4>विचार/लेख</h4>
-	<a href="/category/province">थप <i class="fas fa-chevron-circle-right"></i></a>
+	<h4>विचार</h4>
+	<a href="/category/thought">थप <i class="fas fa-chevron-circle-right"></i></a>
 </div>
 <div class="rd-wrap layout-1">
 	<div class="row">
-		<?php $i=0; $args = array('showposts' =>4, 'cat' => '163');$loop = new WP_Query( $args );if ( $loop->have_posts() ) : while($loop->have_posts()): $loop->the_post();?>
+		<?php $i=0; $args = array('showposts' =>4, 'cat' => '10');$loop = new WP_Query( $args );if ( $loop->have_posts() ) : while($loop->have_posts()): $loop->the_post();?>
 		<div class="col-md-3">
 			<a href="<?php the_permalink();?>"><img src="<?php echo get_the_post_thumbnail_url( $post->ID,'rd-m-thumb' ); ?>" class="img-fluid border rounded" alt=""></a>
 			<a href="<?php the_permalink();?>"><h3 class="d-line mb-2"><?php the_title();?></h3></a>
