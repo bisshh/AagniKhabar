@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-            <?php $i=0; $args = array('showposts' =>10, 'meta_query' => array(
+            <?php $i=0; $args = array('showposts' =>3, 'meta_query' => array(
                     array(
                         'key'   => 'breaking',
                         'value' => '1',

@@ -1,5 +1,5 @@
 <div class="title d-flex align-items-center justify-content-between">
-    <h4>कला र मनोरञ्जन</h4>
+    <h4>मनोरञ्जन</h4>
     <a href="/category/entertainment">थप <i class="fas fa-chevron-circle-right"></i></a>
 </div>
 <div class="rd-wrap layout-4">
